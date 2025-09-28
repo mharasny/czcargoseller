@@ -22,7 +22,7 @@ const Header = () => {
         <div className="self-stretch flex w-[145px] shrink-0 h-[60px] bg-[#4D4D4D] my-auto" />
         <div className="justify-center items-start flex flex-col w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
           <div className="flex w-full items-center gap-2.5 justify-center p-2.5">
-            <div className="self-stretch my-auto">
+            <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
               O systemie 
             </div>
           </div>
