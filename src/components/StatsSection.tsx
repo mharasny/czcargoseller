@@ -1,8 +1,9 @@
 import React from 'react';
 import carIcon from '@/assets/car-icon.svg';
+import carIconNew from '@/assets/car-icon-new.svg';
 
 interface StatCardProps {
-  icon: string;
+  icon: string | any;
   title: string;
   description: string;
   className?: string;
@@ -31,7 +32,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className
 const StatsSection = () => {
   const stats = [
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/233a022b042a427fa38cf4d792f6cd1d282446d3?placeholderIfAbsent=true",
+      icon: carIconNew,
       title: "3 giełdy",
       description: "Dodaj ofertę jeden raz, a my opublikujemy ją na giełdach Trans, TIMOCOM, Teleroute"
     },
