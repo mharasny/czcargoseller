@@ -2,6 +2,7 @@ import React from 'react';
 import carIcon from '@/assets/car-icon.svg';
 import carIconNew from '@/assets/car-icon-new.svg';
 import timeIconNew from '@/assets/time-icon-new.svg';
+import costIcon from '@/assets/cost-icon.svg';
 
 interface StatCardProps {
   icon: string | any;
@@ -43,7 +44,7 @@ const StatsSection = () => {
       description: "O tyle zredukujemy czas poświęcany na zarządzanie ofertami na giełdach"
     },
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/fc056badc9f8e827ef7179307ca871d44d554347?placeholderIfAbsent=true",
+      icon: costIcon,
       title: "50k zł",
       description: "To koszt pracy wpisania 67 000 ofert na kilka giełd, zredukujemy to o min. 50%"
     },
