@@ -14,7 +14,7 @@ const HeroSection = () => {
                     Management System. <br />
                     <span className="font-barlow-condensed text-[64px] font-[600] leading-normal tracking-[1.28px]" style={{color: '#66BC98'}}>Nie TMS.</span>
                   </h1>
-                  <p className="text-[#4D4D4D] text-[42px] tracking-[1.26px] mt-6 max-md:max-w-full">
+                  <p className="text-[#4D4D4D] font-barlow-condensed text-[42px] font-[600] leading-normal tracking-[1.26px] mt-6 max-md:max-w-full">
                     Integrator systemów do sprzedaży <br />
                     ładunków spotowych.
                   </p>
