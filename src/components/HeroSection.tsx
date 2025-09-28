@@ -2,6 +2,7 @@ import React from 'react';
 import heroBackground from '@/assets/hero-background.png';
 import ellipseBackground from '@/assets/ellipse-background.svg';
 import paletIcon from '@/assets/palet.svg';
+import vectorTir from '@/assets/vector-tir.svg';
 
 const HeroSection = () => {
   return (
@@ -69,9 +70,17 @@ const HeroSection = () => {
             />
             <div>Mailing</div>
             <img
-              src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/22f6e2dc3cabb25286d2c61c3ae4fd2ed959adfb?placeholderIfAbsent=true"
+              src={vectorTir}
               alt="Additional illustration"
-              className="aspect-[0.92] object-contain w-full self-stretch mt-[154px] max-md:mt-10"
+              className="shrink-0"
+              style={{
+                width: '271.438px',
+                height: '296.455px',
+                flexShrink: 0,
+                strokeWidth: '12px',
+                stroke: '#F6F9FC',
+                marginTop: '154px'
+              }}
             />
           </div>
         </div>
