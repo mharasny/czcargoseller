@@ -6,18 +6,6 @@ import vectorTir from '@/assets/vector-tir.svg';
 import dotterIcon from '@/assets/dotter.svg';
 const HeroSection = () => {
   return <section className="w-full max-w-[1421px] mt-[131px] max-md:max-w-full max-md:mt-10 relative">
-      {/* Blurred background ellipse */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{
-      width: '814px',
-      height: '736px',
-      flexShrink: 0,
-      borderRadius: '814px',
-      background: 'linear-gradient(0deg, rgba(199, 206, 212, 0.25) 0%, rgba(199, 206, 212, 0.25) 100%), linear-gradient(271deg, #66BC98 -28.48%, #F4F4F4 50.68%)',
-      filter: 'blur(50px)',
-      left: '65%',
-      top: '50%',
-      transform: 'translate(-50%, -50%)'
-    }} />
       <div className="gap-5 flex max-md:flex-col max-md:items-stretch bg-auto bg-center bg-no-repeat relative z-10" style={{
       backgroundImage: `url(${heroBackground})`
     }}>
