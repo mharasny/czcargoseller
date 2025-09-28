@@ -9,7 +9,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className = "" }) => {
   return (
-    <div className={`bg-white flex w-[344px] max-w-full flex-col items-stretch px-6 py-8 rounded-2xl max-md:px-5 ${className}`}>
+    <div className={`flex p-8 flex-col items-center gap-4 flex-1 self-stretch rounded-2xl bg-white ${className}`}>
       <div className="bg-white self-center flex min-h-[88px] w-20 items-center gap-2.5 px-[22px] py-[26px] max-md:px-5">
         <img
           src={icon}
@@ -80,15 +80,10 @@ const StatsSection = () => {
         <span style={{color: '#66BC98', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}>seller</span>
         <span style={{color: '#4D4D4D', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}> w liczbach</span>
       </h2>
-      <div className="shadow-[0px_0px_24px_rgba(220,231,236,1)] flex w-full flex-col mt-20 max-md:max-w-full max-md:mt-10">
-        <StatCard {...stats[0]} />
-        <StatCard {...stats[1]} className="self-center z-10 mt-[-286px] max-md:mt-[-200px]" />
-        <StatCard {...stats[2]} className="self-center z-10 mt-[-286px] ml-[196px] max-md:mt-[-200px]" />
-        <StatCard {...stats[3]} className="z-10 mt-[-286px] max-md:mt-[-200px]" />
-        <StatCard {...stats[4]} className="mt-12 max-md:mt-10" />
-        <StatCard {...stats[5]} className="self-center z-10 mt-[-286px] max-md:mt-[-200px]" />
-        <StatCard {...stats[6]} className="self-center z-10 mt-[-286px] ml-[196px] max-md:mt-[-200px]" />
-        <StatCard {...stats[7]} className="z-10 mt-[-286px] max-md:mt-[-200px]" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20 max-md:mt-10">
+        {stats.map((stat, index) => (
+          <StatCard key={index} {...stat} />
+        ))}
       </div>
     </section>
   );
