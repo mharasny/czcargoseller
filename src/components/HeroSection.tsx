@@ -15,7 +15,7 @@ const HeroSection = () => {
           borderRadius: '814px',
           background: 'linear-gradient(0deg, rgba(199, 206, 212, 0.25) 0%, rgba(199, 206, 212, 0.25) 100%), linear-gradient(271deg, #66BC98 -28.48%, #F4F4F4 50.68%)',
           filter: 'blur(50px)',
-          left: '50%',
+          left: '65%',
           top: '50%',
           transform: 'translate(-50%, -50%)'
         }}
