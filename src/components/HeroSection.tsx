@@ -1,6 +1,7 @@
 import React from 'react';
 import heroBackground from '@/assets/hero-background.png';
 import ellipseBackground from '@/assets/ellipse-background.svg';
+import paletIcon from '@/assets/palet.svg';
 
 const HeroSection = () => {
   return (
@@ -42,9 +43,16 @@ const HeroSection = () => {
               </div>
               <div className="w-[22%] ml-5 max-md:w-full max-md:ml-0">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/4ee43c09427b08774adab3952aa188bc74b5e914?placeholderIfAbsent=true"
+                  src={paletIcon}
                   alt="System illustration"
-                  className="aspect-[0.93] object-contain w-[206px] shrink-0 max-w-full"
+                  className="shrink-0"
+                  style={{
+                    width: '181.46px',
+                    height: '198.184px',
+                    flexShrink: 0,
+                    strokeWidth: '12px',
+                    stroke: '#F6F9FC'
+                  }}
                 />
               </div>
             </div>
