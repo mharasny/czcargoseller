@@ -9,10 +9,10 @@ const HeroSection = () => {
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
               <div className="w-[78%] max-md:w-full max-md:ml-0">
                 <div className="mr-[-43px] grow font-semibold mt-12 max-md:max-w-full max-md:mt-10">
-                  <h1 className="text-[#4d4d4d] text-[64px] tracking-[1.28px] max-md:max-w-full max-md:text-[40px]">
+                  <h1 className="text-[#4d4d4d] font-barlow-condensed text-[64px] font-[600] leading-normal tracking-[1.28px] max-md:max-w-full max-md:text-[40px]">
                     Spot Freight <br />
                     Management System. <br />
-                    <span style={{color: 'rgba(102,188,152,1)'}}>Nie TMS.</span>
+                    <span className="font-barlow-condensed text-[64px] font-[600] leading-normal tracking-[1.28px]" style={{color: '#66BC98'}}>Nie TMS.</span>
                   </h1>
                   <p className="text-[#4D4D4D] text-[42px] tracking-[1.26px] mt-6 max-md:max-w-full">
                     Integrator systemów do sprzedaży <br />
