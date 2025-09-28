@@ -3,6 +3,7 @@ import carIcon from '@/assets/car-icon.svg';
 import carIconNew from '@/assets/car-icon-new.svg';
 import timeIconNew from '@/assets/time-icon-new.svg';
 import costIcon from '@/assets/cost-icon.svg';
+import clickIcon from '@/assets/click-icon.svg';
 
 interface StatCardProps {
   icon: string | any;
@@ -49,7 +50,7 @@ const StatsSection = () => {
       description: "To koszt pracy wpisania 67 000 ofert na kilka giełd, zredukujemy to o min. 50%"
     },
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/cf723f7a774bc5beaadf4fb371ee5ab0c410cbdc?placeholderIfAbsent=true",
+      icon: clickIcon,
       title: "1 x",
       description: "Kliknij raz, aby odświeżyć lub usunąć wiele ofert na 3 giełdach naraz"
     },
