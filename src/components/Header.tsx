@@ -43,7 +43,7 @@ const Header = () => {
         </div>
         <div className="justify-center items-start flex h-[60px] flex-col w-[124px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
           <div className="flex w-full items-center gap-2.5 justify-center p-2.5">
-            <div className="self-stretch my-auto">
+            <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
               Załóż konto
             </div>
           </div>
