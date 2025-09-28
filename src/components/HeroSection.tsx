@@ -1,10 +1,26 @@
 import React from 'react';
 import heroBackground from '@/assets/hero-background.png';
+import ellipseBackground from '@/assets/ellipse-background.svg';
 
 const HeroSection = () => {
   return (
-    <section className="w-full max-w-[1421px] mt-[131px] max-md:max-w-full max-md:mt-10">
-      <div className="gap-5 flex max-md:flex-col max-md:items-stretch bg-auto bg-center bg-no-repeat" style={{backgroundImage: `url(${heroBackground})`}}>
+    <section className="w-full max-w-[1421px] mt-[131px] max-md:max-w-full max-md:mt-10 relative">
+      {/* Blurred background ellipse */}
+      <div 
+        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        style={{
+          width: '814px',
+          height: '736px',
+          flexShrink: 0,
+          borderRadius: '814px',
+          background: 'linear-gradient(0deg, rgba(199, 206, 212, 0.25) 0%, rgba(199, 206, 212, 0.25) 100%), linear-gradient(271deg, #66BC98 -28.48%, #F4F4F4 50.68%)',
+          filter: 'blur(50px)',
+          left: '50%',
+          top: '50%',
+          transform: 'translate(-50%, -50%)'
+        }}
+      />
+      <div className="gap-5 flex max-md:flex-col max-md:items-stretch bg-auto bg-center bg-no-repeat relative z-10" style={{backgroundImage: `url(${heroBackground})`}}>
         <div className="w-9/12 max-md:w-full max-md:ml-0">
           <div className="max-md:max-w-full max-md:mt-10">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
