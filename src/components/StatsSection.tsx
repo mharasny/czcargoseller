@@ -73,11 +73,12 @@ const StatsSection = () => {
 
   return (
     <section className="w-full max-w-[1520px] mt-[111px] max-md:max-w-full max-md:mt-10">
-      <h2 className="text-[#4D4D4D] text-center text-[42px] font-semibold tracking-[1.26px] uppercase max-md:max-w-full">
-        <span style={{fontSize: '38px', lineHeight: '46px', letterSpacing: '1.14px', textTransform: 'uppercase'}}>
+      <h2 className="text-[#4D4D4D] text-center text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] uppercase max-md:max-w-full">
+        <span style={{fontSize: '38px', lineHeight: '46px', letterSpacing: '1.14px', textTransform: 'uppercase', fontWeight: '600'}}>
           cargo
         </span>
-        <span style={{color: 'rgba(102,188,152,1)'}}>seller</span> w liczbach
+        <span style={{color: '#66BC98', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}>seller</span>
+        <span style={{color: '#4D4D4D', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}> w liczbach</span>
       </h2>
       <div className="shadow-[0px_0px_24px_rgba(220,231,236,1)] flex w-full flex-col mt-20 max-md:max-w-full max-md:mt-10">
         <StatCard {...stats[0]} />
