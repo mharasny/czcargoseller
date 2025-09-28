@@ -15,7 +15,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className
         <img
           src={carIcon}
           alt=""
-          className="w-20 h-[87.66px] object-contain"
+          className="w-20 h-[87.66px] absolute object-contain"
         />
       </div>
       <div className="text-[#66BC98] text-center text-[42px] font-semibold tracking-[1.26px] mt-4">
