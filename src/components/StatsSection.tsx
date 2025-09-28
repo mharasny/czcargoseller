@@ -15,7 +15,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className
         <img
           src={carIcon}
           alt=""
-          className="aspect-[1] object-contain w-9 self-stretch my-auto"
+          className="w-20 h-[87.66px] absolute object-contain"
         />
       </div>
       <div className="text-[#66BC98] text-center text-[42px] font-semibold tracking-[1.26px] mt-4">
