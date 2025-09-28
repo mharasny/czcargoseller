@@ -27,7 +27,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="justify-center items-stretch self-stretch flex flex-col w-[89px] bg-[#4D4D4D] my-auto px-2.5 py-2">
+        <div className="justify-center items-start flex flex-col w-[89px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
           <div className="flex w-full items-center gap-2.5 justify-center p-2.5">
             <div className="self-stretch my-auto">
               Cennik 
