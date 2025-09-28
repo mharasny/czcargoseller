@@ -41,17 +41,19 @@ const HeroSection = () => {
                   </button>
                 </div>
               </div>
-              <div className="w-[22%] ml-5 max-md:w-full max-md:ml-0">
+              <div className="w-[22%] ml-5 max-md:w-full max-md:ml-0 relative">
                 <img
                   src={paletIcon}
                   alt="System illustration"
-                  className="shrink-0"
+                  className="shrink-0 relative"
                   style={{
                     width: '181.46px',
                     height: '198.184px',
                     flexShrink: 0,
                     strokeWidth: '12px',
-                    stroke: '#F6F9FC'
+                    stroke: '#F6F9FC',
+                    left: '-4%',
+                    top: '8%'
                   }}
                 />
               </div>
