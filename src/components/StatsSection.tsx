@@ -1,5 +1,5 @@
 import React from 'react';
-import timeIcon from '@/assets/time-icon.svg';
+import carIcon from '@/assets/car-icon.svg';
 
 interface StatCardProps {
   icon: string;
@@ -13,7 +13,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className
     <div className={`flex p-8 flex-col items-center gap-4 flex-1 self-stretch rounded-2xl bg-white ${className}`}>
       <div className="bg-white self-center flex min-h-[88px] w-20 items-center gap-2.5 px-[22px] py-[26px] max-md:px-5 relative">
         <img
-          src={timeIcon}
+          src={icon}
           alt=""
           className="w-20 h-[87.66px] absolute object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         />
