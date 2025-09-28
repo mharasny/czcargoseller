@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-[rgba(244,244,244,1)] flex flex-col overflow-hidden items-center py-[26px]">
       <nav className="flex items-center overflow-hidden text-lg text-white font-normal leading-none flex-wrap max-md:max-w-full">
-        <div className="items-center self-stretch flex min-w-60 min-h-[60px] gap-2.5 text-2xl text-white font-bold uppercase w-[693px] bg-[#4D4D4D] my-auto px-10 py-4 rounded-[16px_0_0_16px] max-md:max-w-full max-md:px-5">
+        <div className="items-center flex min-w-60 h-[60px] gap-2.5 text-2xl text-white font-bold uppercase w-[693px] bg-[#4D4D4D] px-10 py-2.5 rounded-[16px_0_0_16px] max-md:max-w-full max-md:px-5">
           <div className="self-stretch my-auto">
             <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', textTransform: 'uppercase'}}>
               cargo
