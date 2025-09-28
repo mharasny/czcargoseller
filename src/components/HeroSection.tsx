@@ -3,6 +3,7 @@ import heroBackground from '@/assets/hero-background.png';
 import ellipseBackground from '@/assets/ellipse-background.svg';
 import paletIcon from '@/assets/palet.svg';
 import vectorTir from '@/assets/vector-tir.svg';
+import dotterIcon from '@/assets/dotter.svg';
 
 const HeroSection = () => {
   return (
@@ -68,7 +69,20 @@ const HeroSection = () => {
               alt="Mailing icon"
               className="aspect-[1] object-contain w-[60px]"
             />
-            <div>Mailing</div>
+            <div className="flex items-center gap-2">
+              <div>Mailing</div>
+              <img
+                src={dotterIcon}
+                alt="Dotter"
+                className="shrink-0"
+                style={{
+                  width: '19px',
+                  height: '20.751px',
+                  flexShrink: 0,
+                  aspectRatio: '19.00/20.75'
+                }}
+              />
+            </div>
             <img
               src={vectorTir}
               alt="Additional illustration"
