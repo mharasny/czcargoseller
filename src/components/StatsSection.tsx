@@ -4,6 +4,7 @@ import carIconNew from '@/assets/car-icon-new.svg';
 import timeIconNew from '@/assets/time-icon-new.svg';
 import costIcon from '@/assets/cost-icon.svg';
 import clickIcon from '@/assets/click-icon.svg';
+import implementationIcon from '@/assets/implementation-icon.svg';
 
 interface StatCardProps {
   icon: string | any;
@@ -55,7 +56,7 @@ const StatsSection = () => {
       description: "Kliknij raz, aby odświeżyć lub usunąć wiele ofert na 3 giełdach naraz"
     },
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/ffcf45fbc15b8e9843f72a10c5f8240e4fbe3c12?placeholderIfAbsent=true",
+      icon: implementationIcon,
       title: "30 min.",
       description: "Tylko tyle zajmie wdrożenie nowego narzędzia w firmie/zespole."
     },
