@@ -9,7 +9,7 @@ const Header = () => {
             <span className="text-white font-barlow-condensed text-2xl font-bold uppercase leading-normal">
               cargo
             </span>
-            <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', color: 'rgba(102,188,152,1)'}}>
+            <span className="font-barlow-condensed text-2xl font-bold leading-normal" style={{color: '#66BC98'}}>
               seller
             </span>
           </div>
