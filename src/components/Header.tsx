@@ -20,7 +20,7 @@ const Header = () => {
           className="aspect-[1.2] object-contain w-[120px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]"
         />
         <div className="self-stretch flex w-[145px] shrink-0 h-[60px] bg-[#4D4D4D] my-auto" />
-        <div className="justify-center items-stretch self-stretch flex flex-col w-[122px] bg-[#4D4D4D] my-auto px-2.5 py-2">
+        <div className="justify-center items-start flex flex-col w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
           <div className="flex w-full items-center gap-2.5 justify-center p-2.5">
             <div className="self-stretch my-auto">
               O systemie 
