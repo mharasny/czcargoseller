@@ -26,7 +26,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className
           className="w-20 h-[87.66px] absolute object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </div>
-      <div className="text-[#66BC98] text-center text-[42px] font-semibold tracking-[1.26px] mt-4">
+      <div className="text-zielony text-center text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] mt-4">
         {title}
       </div>
       <div className="text-[#4D4D4D] text-center text-lg font-normal leading-6 mt-4">
