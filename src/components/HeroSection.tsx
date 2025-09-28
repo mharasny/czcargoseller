@@ -18,7 +18,7 @@ const HeroSection = () => {
                     Integrator systemów do sprzedaży <br />
                     ładunków spotowych.
                   </p>
-                  <button className="justify-center items-stretch flex min-h-[51px] w-[166px] max-w-full flex-col text-lg text-white font-normal text-center leading-none bg-[#66BC98] mt-6 px-8 py-3.5 rounded-3xl max-md:px-5 hover:bg-[#5aa085] transition-colors">
+                  <button className="flex h-[51px] px-8 py-4 flex-col justify-center items-center gap-12 text-lg text-white font-normal text-center leading-none bg-[#66BC98] mt-6 rounded-3xl hover:bg-[#5aa085] transition-colors">
                     Zobacz więcej
                   </button>
                 </div>
