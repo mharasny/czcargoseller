@@ -6,6 +6,7 @@ import costIcon from '@/assets/cost-icon.svg';
 import clickIcon from '@/assets/click-icon.svg';
 import implementationIcon from '@/assets/implementation-icon.svg';
 import publishIcon from '@/assets/publish-icon.svg';
+import findIcon from '@/assets/find-icon.svg';
 
 interface StatCardProps {
   icon: string | any;
@@ -67,7 +68,7 @@ const StatsSection = () => {
       description: "Opublikujesz ofertę na 3 giełdy + wyślesz mailing z listą ładunków"
     },
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/ae837320956901d8cb5ca141f65c504f355d2335?placeholderIfAbsent=true",
+      icon: findIcon,
       title: "0 min.",
       description: "Nie poświęcisz minuty na szukanie wolnych pojazdów, a zobaczysz wyniki z 2 giełd"
     },
