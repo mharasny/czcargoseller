@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-[rgba(244,244,244,1)] inline-flex overflow-hidden items-center justify-center py-[26px] fixed top-0 left-0 right-0 z-50">
+    <header className="bg-transparent inline-flex overflow-hidden items-center justify-center py-[26px] fixed top-0 left-0 right-0 z-50">
       <nav className="flex items-center overflow-hidden text-lg text-white font-normal leading-none flex-wrap max-md:max-w-full">
         <div className="items-center flex min-w-60 h-[60px] gap-2.5 text-2xl text-white font-bold uppercase w-[693px] bg-[#4D4D4D] px-10 py-2.5 rounded-[16px_0_0_16px] max-md:max-w-full max-md:px-5">
           <div className="self-stretch my-auto">
