@@ -7,6 +7,7 @@ import clickIcon from '@/assets/click-icon.svg';
 import implementationIcon from '@/assets/implementation-icon.svg';
 import publishIcon from '@/assets/publish-icon.svg';
 import findIcon from '@/assets/find-icon.svg';
+import priceIcon from '@/assets/price-icon.svg';
 
 interface StatCardProps {
   icon: string | any;
@@ -73,7 +74,7 @@ const StatsSection = () => {
       description: "Nie poświęcisz minuty na szukanie wolnych pojazdów, a zobaczysz wyniki z 2 giełd"
     },
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/85f6a3d998a777002a8cf540c874220ff105c161?placeholderIfAbsent=true",
+      icon: priceIcon,
       title: "~ 29zł",
       description: "To średnia opłata miesięczna za konto użytkownika w CARGOseller"
     }
