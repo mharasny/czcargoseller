@@ -1,4 +1,5 @@
 import React from 'react';
+import carIcon from '@/assets/car-icon.svg';
 
 interface StatCardProps {
   icon: string;
@@ -12,7 +13,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, description, className
     <div className={`flex p-8 flex-col items-center gap-4 flex-1 self-stretch rounded-2xl bg-white ${className}`}>
       <div className="bg-white self-center flex min-h-[88px] w-20 items-center gap-2.5 px-[22px] py-[26px] max-md:px-5">
         <img
-          src={icon}
+          src={carIcon}
           alt=""
           className="aspect-[1] object-contain w-9 self-stretch my-auto"
         />
