@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import StatsSection from '@/components/StatsSection';
+import AlternatingSection from '@/components/AlternatingSection';
 import FeaturesContainer from '@/components/FeatureSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import FunctionalitiesSection from '@/components/FunctionalitiesSection';
@@ -16,6 +17,7 @@ const Index = () => {
       <main className="w-full flex flex-col items-center">
         <HeroSection />
         <StatsSection />
+        <AlternatingSection />
         <FeaturesContainer />
         <TestimonialsSection />
         <FunctionalitiesSection />
