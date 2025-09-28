@@ -52,8 +52,8 @@ const HeroSection = () => {
                     flexShrink: 0,
                     strokeWidth: '12px',
                     stroke: '#F6F9FC',
-                    left: '-8%',
-                    top: '12%'
+                    left: '-15%',
+                    top: '20%'
                   }}
                 />
               </div>
