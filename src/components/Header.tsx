@@ -17,7 +17,7 @@ const Header = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/f4cf39285a5f4437f931fff00bfa00b707db0178?placeholderIfAbsent=true"
           alt="Logo"
-          className="object-contain w-[120px] h-[60px] shrink-0 rounded-[0px_0px_0px_0px]"
+          className="aspect-[1.2] object-contain w-[120px] h-[60px] shrink-0 rounded-[0px_0px_0px_0px]"
         />
         <div className="self-stretch flex w-[145px] shrink-0 h-[60px] bg-[#4D4D4D]" />
         <div className="justify-center items-center self-stretch flex flex-col w-[122px] h-[60px] bg-[#4D4D4D] px-2.5">
