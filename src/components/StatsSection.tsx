@@ -1,6 +1,7 @@
 import React from 'react';
 import carIcon from '@/assets/car-icon.svg';
 import carIconNew from '@/assets/car-icon-new.svg';
+import timeIconNew from '@/assets/time-icon-new.svg';
 
 interface StatCardProps {
   icon: string | any;
@@ -37,7 +38,7 @@ const StatsSection = () => {
       description: "Dodaj ofertę jeden raz, a my opublikujemy ją na giełdach Trans, TIMOCOM, Teleroute"
     },
     {
-      icon: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/bc3dbcb0d50ff6959e8266435161f620316c6722?placeholderIfAbsent=true",
+      icon: timeIconNew,
       title: "70%",
       description: "O tyle zredukujemy czas poświęcany na zarządzanie ofertami na giełdach"
     },
