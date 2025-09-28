@@ -50,7 +50,7 @@ const Header = () => {
         </div>
         <div className="items-start flex flex-col text-[#66BC98] font-bold justify-center w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 rounded-[0_8px_8px_0]">
           <div className="flex w-full items-center gap-2.5 justify-center p-2.5">
-            <div className="text-[#66BC98] self-stretch my-auto">
+            <div className="font-roboto-condensed text-lg font-bold leading-6" style={{color: '#66BC98'}}>
               Zaloguj się
             </div>
           </div>
