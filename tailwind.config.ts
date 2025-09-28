@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
+        'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
