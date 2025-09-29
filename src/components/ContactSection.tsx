@@ -18,7 +18,7 @@ const ContactSection = () => {
                   className="w-[54.757px] h-[60px] shrink-0 my-auto"
                   style={{ aspectRatio: '54.76/60.00' }}
                 />
-                <div className="text-[#66BC98] self-stretch my-auto">
+                <div className="text-zielony font-roboto-condensed text-[20px] font-bold leading-6 self-stretch my-auto">
                   Obsługa Klienta
                 </div>
               </div>
