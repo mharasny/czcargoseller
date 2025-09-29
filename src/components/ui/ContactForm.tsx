@@ -43,7 +43,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="min-w-60 text-lg text-[#66BC98] font-normal leading-none flex-1 shrink basis-[0%] max-md:max-w-full">
-      <h3 className="text-white text-3xl leading-[0.8] mb-6">
+      <h3 className="text-white font-barlow-condensed text-[30px] font-normal leading-6 mb-6">
         Formularz kontaktowy
       </h3>
       
