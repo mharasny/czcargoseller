@@ -1,5 +1,8 @@
 import React from 'react';
 import statsImage from '@/assets/stats.png';
+import searchVehicleImage from '@/assets/search-vehicle.png';
+import statisticsImage from '@/assets/statistics.png';
+import aiFeatureImage from '@/assets/ai-feature.png';
 import dotIcon from '@/assets/dot.svg';
 interface FeatureItemProps {
   title: string;
@@ -53,17 +56,17 @@ const FeaturesContainer = () => {
     title: "Automatyczne szukanie wolnego pojazdu",
     description: "Integracja CARGOseller z TIMOCOM pozwala na automatyczne szukanie wolnych pojazdów w promieniu 100km od miejsca załadunku ładunku, który dodano do CARGOseller.",
     features: ["od teraz nie szukasz wolnych pojazdów manualnie, robi to za Ciebie algorytm", "znalezione wyniki wyświetlane są w kolumnie „Propozycje\" wraz z propozycjami cenowymi z innych systemów"],
-    imageSrc: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/6a2c3650fa3ebcf3f3648921ecfb23447821efd6?placeholderIfAbsent=true"
+    imageSrc: searchVehicleImage
   }, {
     title: "Statystyki",
     description: "Rozproszenie wolumenu ładunków spot na sprzedaż na mailach wielu pracowników uniemożliwia przeprowadzanie analiz. Agregowanie wszystkich ładunków spot na sprzedaż w systemie CARGOseller pozwala na dostarczenie kompletnych statystyk.",
     features: ["statystyki w ujęciu czasowym", "liczbę ładunków wpisanych, sprzedanych"],
-    imageSrc: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/7344a91b01a8f33d218c887b695fc9171ac16118?placeholderIfAbsent=true"
+    imageSrc: statisticsImage
   }, {
     title: "AI - szybciej, więcej, skuteczniej",
     description: "Wklej TEKST zapytania, a system wykorzystując AI utworzy gotowe oferty. Dodaj OBRAZ na którym są oferty, a system także utworzy gotowe oferty w czasie szybszym niż człowiek.",
     features: ["Praca z AI to sposób na poprawę efektywności i wyników finansowych bo zyskujesz czas", "Komfort pracy - nie przepisujesz ofert ręcznie"],
-    imageSrc: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/ff62aca574dfd74a794aabf55ed061fb5cf379ce?placeholderIfAbsent=true"
+    imageSrc: aiFeatureImage
   }];
   return <section className="w-full max-w-[1520px] mt-[111px] max-md:max-w-full max-md:mt-16">
       
