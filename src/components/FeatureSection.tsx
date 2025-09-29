@@ -1,4 +1,5 @@
 import React from 'react';
+import loadingImage from '@/assets/loading.png';
 
 interface FeatureItemProps {
   title: string;
@@ -62,7 +63,7 @@ const FeaturesContainer = () => {
         "wysyłka nawet na 3 giełdy transportowe - publikujesz ładunki do giełd w których masz konto",
         "Mailing 4.0 - automatyczne generowanie maila z listą ładunków do wybranych grup zaufanych podwykonawców"
       ],
-      imageSrc: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/4bcd5f20a29ebff3fbbcbd204084ecd48c7b643b?placeholderIfAbsent=true"
+      imageSrc: loadingImage
     },
     {
       title: "Automatyczne szukanie wolnego pojazdu",
