@@ -1,5 +1,5 @@
 import React from 'react';
-import loadingImage from '@/assets/loading.png';
+import statsImage from '@/assets/stats.png';
 import dotIcon from '@/assets/dot.svg';
 interface FeatureItemProps {
   title: string;
@@ -48,7 +48,7 @@ const FeaturesContainer = () => {
     title: "Publikowanie ładunków spot na sprzedaż",
     description: "W CARGOseller dodajesz ładunek jeden raz i wskazujesz, które narzędzia i kanały sprzedaży aktywujesz.",
     features: ["wysyłka nawet na 3 giełdy transportowe - publikujesz ładunki do giełd w których masz konto", "Mailing 4.0 - automatyczne generowanie maila z listą ładunków do wybranych grup zaufanych podwykonawców"],
-    imageSrc: loadingImage
+    imageSrc: statsImage
   }, {
     title: "Automatyczne szukanie wolnego pojazdu",
     description: "Integracja CARGOseller z TIMOCOM pozwala na automatyczne szukanie wolnych pojazdów w promieniu 100km od miejsca załadunku ładunku, który dodano do CARGOseller.",
