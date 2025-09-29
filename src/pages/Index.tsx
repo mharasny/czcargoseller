@@ -17,7 +17,7 @@ const Index = () => {
       <main className="w-full flex flex-col items-center">
         <HeroSection />
         <StatsSection />
-        <AlternatingSection />
+        
         <FeaturesContainer />
         <TestimonialsSection />
         <FunctionalitiesSection />
