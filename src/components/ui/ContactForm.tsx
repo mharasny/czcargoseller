@@ -54,7 +54,7 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleInputChange}
           placeholder="Imię Nazwisko"
-          className="text-[#66BC98] self-stretch my-auto bg-transparent border-none outline-none placeholder-[#66BC98] w-full"
+          className="text-zielony font-roboto-condensed text-lg font-normal leading-6 self-stretch my-auto bg-transparent border-none outline-none placeholder-zielony w-full"
           required
         />
       </div>
@@ -66,7 +66,7 @@ const ContactForm = () => {
           value={formData.company}
           onChange={handleInputChange}
           placeholder="Nazwa firmy"
-          className="text-[#66BC98] self-stretch my-auto bg-transparent border-none outline-none placeholder-[#66BC98] w-full"
+          className="text-zielony font-roboto-condensed text-lg font-normal leading-6 self-stretch my-auto bg-transparent border-none outline-none placeholder-zielony w-full"
           required
         />
       </div>
@@ -78,7 +78,7 @@ const ContactForm = () => {
           value={formData.phone}
           onChange={handleInputChange}
           placeholder="Telefon"
-          className="text-[#66BC98] self-stretch my-auto bg-transparent border-none outline-none placeholder-[#66BC98] w-full"
+          className="text-zielony font-roboto-condensed text-lg font-normal leading-6 self-stretch my-auto bg-transparent border-none outline-none placeholder-zielony w-full"
           required
         />
       </div>
@@ -90,7 +90,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleInputChange}
           placeholder="Email"
-          className="text-[#66BC98] self-stretch my-auto bg-transparent border-none outline-none placeholder-[#66BC98] w-full"
+          className="text-zielony font-roboto-condensed text-lg font-normal leading-6 self-stretch my-auto bg-transparent border-none outline-none placeholder-zielony w-full"
           required
         />
       </div>
@@ -101,7 +101,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleInputChange}
           placeholder="Wiadomość"
-          className="text-[#66BC98] bg-transparent border-none outline-none placeholder-[#66BC98] w-full resize-none"
+          className="text-zielony font-roboto-condensed text-lg font-normal leading-6 bg-transparent border-none outline-none placeholder-zielony w-full resize-none"
           rows={4}
           required
         />
