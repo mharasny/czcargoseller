@@ -1,5 +1,5 @@
 import React from 'react';
-import loading2Image from '@/assets/loading-2.png';
+import aiImage from '@/assets/ai.png';
 import dotIcon from '@/assets/dot.svg';
 
 interface FeatureItemProps {
@@ -65,7 +65,7 @@ const FeaturesContainer = () => {
         "wysyłka nawet na 3 giełdy transportowe - publikujesz ładunki do giełd w których masz konto",
         "Mailing 4.0 - automatyczne generowanie maila z listą ładunków do wybranych grup zaufanych podwykonawców"
       ],
-      imageSrc: loading2Image
+      imageSrc: aiImage
     },
     {
       title: "Automatyczne szukanie wolnego pojazdu",
