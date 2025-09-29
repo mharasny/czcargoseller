@@ -89,7 +89,7 @@ const ContactSection = () => {
               <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', color: '#FFF', fontSize: '26px', fontWeight: '700', textTransform: 'uppercase'}}>
                 cargo
               </span>
-              <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', color: 'rgba(102,188,152,1)'}}>
+              <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', color: 'var(--zielony, #66BC98)', fontSize: '26px', fontWeight: '700', textTransform: 'lowercase'}}>
                 seller
               </span>
             </div>
