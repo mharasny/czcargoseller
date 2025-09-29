@@ -38,9 +38,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
                 <span>{feature}</span>
               </div>)}
           </div>
-          <button className="flex items-center gap-2.5 text-zielony leading-none justify-center mt-6 px-6 py-3 rounded-3xl cursor-pointer hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-200">
-            <span className="text-zielony font-medium">Czytaj więcej</span>
-          </button>
+          
         </div>
       </div>
     </div>;
