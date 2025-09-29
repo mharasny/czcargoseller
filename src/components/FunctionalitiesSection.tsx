@@ -16,7 +16,7 @@ const FunctionalitiesSection = () => {
 
   return (
     <section className="w-full max-w-[1520px] mt-[131px] max-md:max-w-full max-md:mt-10">
-      <h2 className="text-[#4D4D4D] text-center text-[42px] font-semibold tracking-[1.26px] max-md:max-w-full">
+      <h2 className="text-czarny text-center text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] max-md:max-w-full">
         Funkcjonalności
       </h2>
       <div className="flex w-full flex-col items-stretch text-lg text-[#4E4D4D] font-normal mt-20 max-md:max-w-full max-md:mt-10">
