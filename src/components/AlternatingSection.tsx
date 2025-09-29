@@ -13,7 +13,28 @@ const AlternatingItem: React.FC<AlternatingItemProps> = ({
   description,
   reversed = false
 }) => {
-  return;
+  return (
+    <div className={`flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-stretch gap-0 mb-0`}>
+      {/* Image Container */}
+      <div className="w-full lg:w-1/2 bg-[rgba(248,248,248,1)]">
+        <div className="flex items-center justify-center px-8 lg:px-20 py-16 lg:py-[66px] h-full min-h-[300px] lg:min-h-[400px]">
+          <img src={imageSrc} alt={imageAlt} className="w-[280px] h-[280px] object-contain rounded-lg" />
+        </div>
+      </div>
+      
+      {/* Text Content */}
+      <div className="w-full lg:w-1/2 bg-[rgba(248,248,248,1)]">
+        <div className={`flex flex-col justify-center h-full min-h-[300px] lg:min-h-[400px] px-6 lg:px-12 xl:px-20 py-16 lg:py-[110px] ${reversed ? 'lg:pr-6 xl:pr-12' : 'lg:pl-6 xl:pl-12'}`}>
+          <h3 className="text-czarny text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] mb-6 leading-normal">
+            {title}
+          </h3>
+          <p className="text-czarny text-lg font-roboto-condensed font-normal leading-6 mb-6">
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 };
 const AlternatingSection = () => {
   const items = [{

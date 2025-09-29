@@ -18,8 +18,8 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
   return <div className={`flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-stretch gap-0 mb-0`}>
       {/* Image Container */}
       <div className="w-full lg:w-1/2 bg-[rgba(248,248,248,1)]">
-        <div className="flex items-center justify-center px-8 lg:px-20 py-16 lg:py-[66px] h-full min-h-[400px] lg:min-h-[600px]">
-          <img src={imageSrc} alt={title} className="w-full h-auto object-contain rounded-lg" />
+        <div className="flex items-center justify-center px-8 lg:px-20 py-16 lg:py-[66px] h-full min-h-[300px] lg:min-h-[400px]">
+          <img src={imageSrc} alt={title} className="w-[280px] h-[280px] object-contain rounded-lg" />
         </div>
       </div>
       
