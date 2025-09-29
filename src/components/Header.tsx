@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent inline-flex overflow-hidden items-center justify-center py-[26px] fixed top-0 left-0 right-0 z-50">
-      <nav className="flex items-center overflow-hidden text-lg text-white font-normal leading-none flex-wrap max-md:max-w-full">
+    <header className="bg-transparent inline-flex overflow-hidden items-center justify-center py-4 lg:py-[26px] fixed top-0 left-0 right-0 z-50">
+      <nav className="flex items-center overflow-hidden text-sm lg:text-lg text-white font-normal leading-none flex-wrap max-md:max-w-full scale-75 sm:scale-90 lg:scale-100">
         <div className="items-center flex min-w-60 h-[60px] gap-2.5 text-2xl text-white font-bold uppercase w-[693px] bg-[#4D4D4D] px-10 py-2.5 rounded-[16px_0_0_16px] max-md:max-w-full max-md:px-5 max-md:w-auto max-md:flex-1">
           <div className="self-stretch my-auto">
             <span className="text-white font-barlow-condensed text-2xl font-bold uppercase leading-normal">
