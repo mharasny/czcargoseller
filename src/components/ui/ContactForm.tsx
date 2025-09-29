@@ -47,7 +47,7 @@ const ContactForm = () => {
         Formularz kontaktowy
       </h3>
       
-      <div className="bg-[rgba(94,94,94,1)] flex w-full items-center gap-2.5 mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
+      <div className="bg-[#5E5E5E] flex w-[861px] items-center gap-2.5 mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
         <input
           type="text"
           name="name"
@@ -59,7 +59,7 @@ const ContactForm = () => {
         />
       </div>
       
-      <div className="bg-[rgba(94,94,94,1)] flex w-full items-center gap-2.5 mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
+      <div className="bg-[#5E5E5E] flex w-[861px] items-center gap-2.5 mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
         <input
           type="text"
           name="company"
@@ -71,7 +71,7 @@ const ContactForm = () => {
         />
       </div>
       
-      <div className="bg-[rgba(94,94,94,1)] flex w-full items-center gap-2.5 whitespace-nowrap mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
+      <div className="bg-[#5E5E5E] flex w-[861px] items-center gap-2.5 whitespace-nowrap mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
         <input
           type="tel"
           name="phone"
@@ -83,7 +83,7 @@ const ContactForm = () => {
         />
       </div>
       
-      <div className="bg-[rgba(94,94,94,1)] flex w-full items-center gap-2.5 whitespace-nowrap mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
+      <div className="bg-[#5E5E5E] flex w-[861px] items-center gap-2.5 whitespace-nowrap mt-6 px-4 py-2 rounded-lg max-md:max-w-full">
         <input
           type="email"
           name="email"
@@ -95,7 +95,7 @@ const ContactForm = () => {
         />
       </div>
       
-      <div className="bg-[rgba(94,94,94,1)] flex min-h-[100px] w-full gap-2.5 whitespace-nowrap mt-6 pt-2 pb-[68px] px-4 rounded-lg max-md:max-w-full">
+      <div className="bg-[#5E5E5E] flex min-h-[100px] w-[861px] gap-2.5 whitespace-nowrap mt-6 pt-2 pb-[68px] px-4 rounded-lg max-md:max-w-full">
         <textarea
           name="message"
           value={formData.message}
