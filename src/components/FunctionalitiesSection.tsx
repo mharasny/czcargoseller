@@ -33,7 +33,7 @@ const FunctionalitiesSection = () => {
                       : 'bg-white text-[#4E4D4D]'
                   } self-stretch flex gap-2.5 my-auto px-6 py-2 rounded-3xl max-md:px-5 transition-colors hover:bg-[#5aa085] hover:text-white`}
                 >
-                  <div className="self-stretch my-auto">
+                  <div className="flex px-6 py-2 justify-center items-center gap-2.5 rounded-3xl bg-zielony">
                     {tab}
                   </div>
                 </button>
