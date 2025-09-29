@@ -6,7 +6,7 @@ import refreshDeleteImg from '@/assets/refresh-delete.png';
 import automailingImg from '@/assets/automailing.jpg';
 import myloadingsImg from '@/assets/myloadings.png';
 import integrationsImg from '@/assets/integrations.jpg';
-import statisticsImg from '@/assets/statistics.png';
+import statisticsImg from '@/assets/new-statistics.png';
 
 const FunctionalitiesSection = () => {
   const [activeTab, setActiveTab] = useState(0);
