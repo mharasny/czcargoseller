@@ -27,15 +27,16 @@ const FunctionalitiesSection = () => {
                 <button
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  className={`${
+                  className={`flex px-6 py-2 justify-center items-center gap-2.5 rounded-3xl transition-colors hover:bg-[#5aa085] hover:text-white ${
                     activeTab === index
-                      ? 'justify-center items-center text-white bg-[#66BC98]'
-                      : 'flex px-6 py-2 justify-center items-center gap-2.5 rounded-3xl bg-white text-[#4E4D4D]'
-                  } transition-colors hover:bg-[#5aa085] hover:text-white`}
+                      ? 'text-white bg-[#66BC98]'
+                      : 'bg-white text-[#4E4D4D]'
+                  }`}
                 >
-                  <div className="flex px-6 py-2 justify-center items-center gap-2.5 rounded-3xl bg-zielony">
+                  <div className="flex justify-center items-center">
                     {tab}
                   </div>
+                
                 </button>
               ))}
             </div>
