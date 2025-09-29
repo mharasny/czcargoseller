@@ -60,7 +60,7 @@ const ContactSection = () => {
                   alt="Technical support"
                   className="aspect-[0.92] object-contain w-[55px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]"
                 />
-                <div className="text-[#66BC98] self-stretch my-auto">
+                <div className="text-zielony font-roboto-condensed text-[20px] font-bold leading-6 self-stretch my-auto">
                   Wsparcie techniczne
                 </div>
               </div>
