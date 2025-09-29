@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import addLoadingImg from '@/assets/add-loading.png';
+import getPropositionImg from '@/assets/get-proposition.jpg';
+import loadingListImg from '@/assets/loading-list.png';
+import refreshDeleteImg from '@/assets/refresh-delete.png';
+import automailingImg from '@/assets/automailing.jpg';
+import myloadingsImg from '@/assets/myloadings.png';
+import integrationsImg from '@/assets/integrations.jpg';
+import statisticsImg from '@/assets/statistics.png';
 
 const FunctionalitiesSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -12,6 +20,17 @@ const FunctionalitiesSection = () => {
     "Ładunki w mojej firmie",
     "Integracje",
     "Statystyki"
+  ];
+
+  const tabImages = [
+    addLoadingImg,
+    getPropositionImg,
+    loadingListImg,
+    refreshDeleteImg,
+    automailingImg,
+    myloadingsImg,
+    integrationsImg,
+    statisticsImg
   ];
 
   return (
@@ -49,8 +68,8 @@ const FunctionalitiesSection = () => {
             </div>
           </div>
           <img
-            src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/cf86ee60ba6fda8742e6f39675bfa895af0ddf31?placeholderIfAbsent=true"
-            alt="Functionalities screenshot"
+            src={tabImages[activeTab]}
+            alt={`Screenshot for ${tabs[activeTab]}`}
             className="aspect-[1.8] object-contain w-[897px] shadow-[0px_0px_12px_rgba(0,0,0,0.25)] min-w-60 my-auto rounded-lg max-md:max-w-full"
           />
         </div>
