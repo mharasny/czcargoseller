@@ -22,7 +22,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
       {/* Image Container */}
       <div className="w-full lg:w-1/2 bg-[rgba(248,248,248,1)]">
         <div className="flex items-center justify-center px-8 lg:px-20 py-16 lg:py-[66px] h-full min-h-[300px] lg:min-h-[400px]">
-          <img src={imageSrc} alt={title} className="w-[280px] h-[280px] object-contain rounded-lg" />
+          <img src={imageSrc} alt={title} className="w-[320px] h-[320px] object-contain rounded-lg" />
         </div>
       </div>
       
