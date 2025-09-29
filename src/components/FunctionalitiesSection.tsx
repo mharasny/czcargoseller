@@ -39,7 +39,7 @@ const FunctionalitiesSection = () => {
                 </button>
               ))}
             </div>
-            <div className="leading-6 mt-6 max-md:max-w-full">
+            <div className="text-czarny font-roboto-condensed text-lg font-normal leading-6 mt-6 max-md:max-w-full">
               Dodaj ładunek szybciej dzięki opcjom szybkiego wybierania,
               archiwum czy szablonom, opublikuj nawet na 3 giełdach, uruchom
               automatyczne odświeżanie ofert i szukanie pojazdów na TIMOCOM,
