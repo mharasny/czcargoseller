@@ -1,8 +1,8 @@
 import React from 'react';
-import statsImage from '@/assets/stats.png';
-import searchVehicleImage from '@/assets/search-vehicle.png';
-import statisticsImage from '@/assets/statistics.png';
-import aiFeatureImage from '@/assets/ai-feature.png';
+import statsImage from '@/assets/loading.png';
+import searchVehicleImage from '@/assets/find-free.png';
+import statisticsImage from '@/assets/ai.png';
+import aiFeatureImage from '@/assets/stats.png';
 import dotIcon from '@/assets/dot.svg';
 interface FeatureItemProps {
   title: string;
