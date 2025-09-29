@@ -1,5 +1,6 @@
 import React from 'react';
 import loadingImage from '@/assets/loading.png';
+import dotIcon from '@/assets/dot.svg';
 
 interface FeatureItemProps {
   title: string;
@@ -40,8 +41,9 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
           </p>
           <div className="space-y-4 mb-6">
             {features.map((feature, index) => (
-              <div key={index} className="text-czarny text-lg font-roboto-condensed font-normal leading-6">
-                • {feature}
+              <div key={index} className="flex items-start gap-3 text-czarny text-lg font-roboto-condensed font-normal leading-6">
+                <img src={dotIcon} alt="" className="w-[19px] h-[21px] flex-shrink-0 mt-0.5" />
+                <span>{feature}</span>
               </div>
             ))}
           </div>
