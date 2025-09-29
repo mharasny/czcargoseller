@@ -94,7 +94,7 @@ const ContactSection = () => {
               </span>
             </div>
           </div>
-          <div className="text-white font-roboto-condensed text-lg font-normal leading-6 self-stretch w-[821px] my-auto max-md:max-w-full">
+          <div className="text-white font-roboto-condensed text-lg font-normal leading-6 self-stretch w-[821px] my-auto pl-5 max-md:max-w-full">
             Cyfrowe narzędzia i integracje z giełdami do Twojej
             dyspozycji.Wykorzystaj je, aby sprzedawać ładunki spot szybciej,
             wygodniej, skuteczniej.
