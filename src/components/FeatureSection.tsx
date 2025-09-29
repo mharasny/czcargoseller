@@ -25,7 +25,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
           <img
             src={imageSrc}
             alt={title}
-            className="w-full max-w-md lg:max-w-lg h-auto object-contain rounded-lg"
+            className="w-full h-auto object-contain rounded-lg"
           />
         </div>
       </div>
