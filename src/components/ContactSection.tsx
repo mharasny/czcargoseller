@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './ui/ContactForm';
+import accountClientIcon from '@/assets/account-client.svg';
 
 const ContactSection = () => {
   return (
@@ -12,9 +13,10 @@ const ContactSection = () => {
             <div className="w-full text-lg text-white font-normal leading-none">
               <div className="flex w-full items-center gap-6 text-xl text-[#66BC98] font-bold leading-[1.2]">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/8268803a20e5cfcc644f6f017fc7723d207a3c7f?placeholderIfAbsent=true"
+                  src={accountClientIcon}
                   alt="Customer service"
-                  className="aspect-[0.92] object-contain w-[55px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]"
+                  className="w-[54.757px] h-[60px] shrink-0 my-auto"
+                  style={{ aspectRatio: '54.76/60.00' }}
                 />
                 <div className="text-[#66BC98] self-stretch my-auto">
                   Obsługa Klienta
