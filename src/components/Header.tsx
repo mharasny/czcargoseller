@@ -9,14 +9,14 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent inline-flex overflow-hidden items-center justify-center py-4 lg:py-[26px] fixed top-0 left-0 right-0 z-50">
-      <nav className="flex items-center overflow-hidden text-sm lg:text-lg text-white font-normal leading-none flex-wrap max-md:max-w-full scale-75 sm:scale-90 lg:scale-100">
-        <div className="items-center flex min-w-60 h-[60px] gap-2.5 text-2xl text-white font-bold uppercase w-[693px] bg-[#4D4D4D] px-10 py-2.5 rounded-[16px_0_0_16px] max-md:max-w-full max-md:px-5 max-md:w-auto max-md:flex-1">
-          <div className="self-stretch my-auto">
-            <span className="text-white font-barlow-condensed text-2xl font-bold uppercase leading-normal">
+    <header className="bg-transparent flex overflow-hidden items-center justify-center py-4 lg:py-[26px] fixed top-0 left-0 right-0 z-50 px-4">
+      <nav className="flex items-center overflow-hidden text-sm lg:text-lg text-white font-normal leading-none flex-nowrap w-full max-w-7xl transform scale-75 sm:scale-85 md:scale-95 lg:scale-100 origin-center">
+        <div className="items-center flex h-[45px] sm:h-[50px] lg:h-[60px] gap-2.5 text-lg sm:text-xl lg:text-2xl text-white font-bold uppercase flex-1 bg-[#4D4D4D] px-4 sm:px-6 lg:px-10 py-2.5 rounded-[16px_0_0_16px] min-w-0">
+          <div className="self-stretch my-auto whitespace-nowrap overflow-hidden">
+            <span className="text-white font-barlow-condensed text-base sm:text-lg lg:text-2xl font-bold uppercase leading-normal">
               cargo
             </span>
-            <span className="font-barlow-condensed text-2xl font-bold leading-normal lowercase" style={{color: '#66BC98'}}>
+            <span className="font-barlow-condensed text-base sm:text-lg lg:text-2xl font-bold leading-normal lowercase" style={{color: '#66BC98'}}>
               seller
             </span>
           </div>
@@ -24,12 +24,12 @@ const Header = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/f4cf39285a5f4437f931fff00bfa00b707db0178?placeholderIfAbsent=true"
           alt="Logo"
-          className="aspect-[1.2] object-contain w-[120px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-md:hidden"
+          className="aspect-[1.2] object-contain w-[80px] lg:w-[120px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-md:hidden"
         />
-        <div className="self-stretch flex w-[145px] shrink-0 h-[60px] bg-[#4D4D4D] my-auto max-md:hidden" />
+        <div className="self-stretch flex w-[100px] lg:w-[145px] shrink-0 h-[45px] sm:h-[50px] lg:h-[60px] bg-[#4D4D4D] my-auto max-md:hidden" />
         
         {/* Desktop Menu Items */}
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex flex-nowrap">
           <div className="justify-center items-start flex flex-col w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
             <div className="flex w-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
@@ -67,8 +67,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <div className="md:hidden flex items-center justify-center w-[60px] h-[60px] bg-[#4D4D4D] rounded-[0_8px_8px_0]">
+        {/* Mobile/Tablet Hamburger Button */}
+        <div className="lg:hidden flex items-center justify-center w-[45px] sm:w-[50px] md:w-[60px] h-[45px] sm:h-[50px] md:h-[60px] bg-[#4D4D4D] rounded-[0_8px_8px_0]">
           <button
             onClick={toggleMenu}
             className="flex items-center justify-center w-full h-full focus:outline-none"
@@ -87,7 +87,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[112px] bg-[#4D4D4D] z-40 animate-fade-in">
+        <div className="lg:hidden fixed inset-0 top-[80px] sm:top-[90px] md:top-[112px] bg-[#4D4D4D] z-40 animate-fade-in">
           <div className="flex flex-col">
             <div className="flex flex-col border-b border-gray-600">
               <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
