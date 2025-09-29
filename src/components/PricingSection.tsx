@@ -118,7 +118,7 @@ const PricingSection = () => {
 
   return (
     <section className="w-[1200px] max-w-full mt-60 max-md:mt-10">
-      <h2 className="text-[#4D4D4D] text-center text-[42px] font-semibold tracking-[1.26px] max-md:max-w-full">
+      <h2 className="text-czarny text-center text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] max-md:max-w-full">
         Wybierz plan i stanowiska dla siebie
       </h2>
       <div className="w-full mt-20 max-md:max-w-full max-md:mt-10">
