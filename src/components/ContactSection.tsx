@@ -86,7 +86,7 @@ const ContactSection = () => {
               className="aspect-[1] object-contain w-[47px] self-stretch shrink-0 my-auto rounded-lg"
             />
             <div className="self-stretch w-[115px] my-auto">
-              <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', textTransform: 'uppercase'}}>
+              <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', color: '#FFF', fontSize: '26px', fontWeight: '700', textTransform: 'uppercase'}}>
                 cargo
               </span>
               <span style={{fontFamily: 'Barlow Condensed, -apple-system, Roboto, Helvetica, sans-serif', color: 'rgba(102,188,152,1)'}}>
