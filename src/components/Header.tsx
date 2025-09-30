@@ -1,5 +1,24 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const languages = [
+  { code: 'gb', name: 'English', url: 'https://cargoseller.co.uk', flag: '🇬🇧' },
+  { code: 'at', name: 'Österreich', url: 'https://cargoseller.at', flag: '🇦🇹' },
+  { code: 'nl', name: 'Nederland', url: 'https://cargoseller.nl', flag: '🇳🇱' },
+  { code: 'pl', name: 'Polska', url: 'https://cargoseller.eu', flag: '🇵🇱', active: true },
+  { code: 'sk', name: 'Slovensko', url: 'https://cargoseller.sk', flag: '🇸🇰' },
+  { code: 'es', name: 'Español', url: 'https://cargoseller.es', flag: '🇪🇸' },
+  { code: 'lt', name: 'Lietuvių', url: 'https://cargoseller.lt', flag: '🇱🇹' },
+  { code: 'be', name: 'Belgique', url: 'https://cargoseller.be', flag: '🇧🇪' },
+  { code: 'fr', name: 'Français', url: 'https://cargoseller.fr', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', url: 'https://cargoseller.de', flag: '🇩🇪' },
+];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +49,28 @@ const Header = () => {
         
         {/* Desktop Menu Items */}
         <div className="hidden lg:flex flex-nowrap">
+          {/* Language Selector */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <div className="justify-center items-center flex flex-col w-[60px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 cursor-pointer hover:bg-gray-600 transition-colors">
+                <Globe className="w-5 h-5 text-white" />
+              </div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-48 bg-popover z-50">
+              {languages.map((lang) => (
+                <DropdownMenuItem key={lang.code} asChild>
+                  <a
+                    href={lang.url}
+                    className={`flex items-center gap-2 ${lang.active ? 'bg-accent' : ''}`}
+                  >
+                    <span className="text-lg">{lang.flag}</span>
+                    <span>{lang.name}</span>
+                  </a>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+          
           <div className="justify-center items-start flex flex-col w-[122px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
@@ -89,6 +130,33 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden fixed inset-0 top-[80px] sm:top-[90px] md:top-[112px] bg-[#4D4D4D] z-40 animate-fade-in">
           <div className="flex flex-col">
+            {/* Language Selector Mobile */}
+            <div className="flex flex-col border-b border-gray-600">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors cursor-pointer">
+                    <Globe className="w-5 h-5 text-white mr-2" />
+                    <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
+                      Język / Language
+                    </div>
+                  </div>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-48 bg-popover z-50">
+                  {languages.map((lang) => (
+                    <DropdownMenuItem key={lang.code} asChild>
+                      <a
+                        href={lang.url}
+                        className={`flex items-center gap-2 ${lang.active ? 'bg-accent' : ''}`}
+                      >
+                        <span className="text-lg">{lang.flag}</span>
+                        <span>{lang.name}</span>
+                      </a>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+            
             <div className="flex flex-col border-b border-gray-600">
               <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
