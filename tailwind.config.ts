@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
         'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
+        'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -23,8 +23,6 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        zielony: "hsl(var(--zielony))",
-        czarny: "hsl(var(--czarny))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -63,6 +61,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // CargoSeller specific colors
+        zielony: "hsl(var(--zielony))",
+        czarny: "hsl(var(--czarny))",
       },
       borderRadius: {
         lg: "var(--radius)",
