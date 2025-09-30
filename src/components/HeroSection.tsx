@@ -21,7 +21,7 @@ const HeroSection = () => {
                     Integrator systemów do sprzedaży <br />
                     ładunków spotowych.
                   </p>
-                  <a href="#funkcjonalnosci" className="flex h-[51px] px-8 py-4 flex-col justify-center items-center gap-12 text-white font-roboto-condensed text-lg font-normal leading-6 text-center bg-[#66BC98] mt-6 rounded-3xl hover:bg-[#5aa085] transition-colors self-stretch">
+                  <a href="#funkcjonalnosci" className="flex h-[51px] px-8 py-4 flex-col justify-center items-center gap-12 text-white font-roboto-condensed text-lg font-normal leading-6 text-center bg-[#66BC98] mt-6 rounded-3xl hover:bg-[#5aa085] transition-colors w-full">
                     Zobacz więcej
                   </a>
                 </div>
