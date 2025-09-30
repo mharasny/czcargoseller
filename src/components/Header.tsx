@@ -55,7 +55,7 @@ const Header = () => {
           className="aspect-[1.2] object-contain w-[120px] lg:w-[145px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-lg:mx-auto"
         />
         <div className="self-stretch flex w-[30px] lg:w-[75px] shrink-0 h-[60px] lg:h-[73px] bg-[#4D4D4D] my-auto max-lg:flex-1" />
-        
+
         {/* Desktop Menu Items */}
         <div className="hidden lg:flex flex-nowrap">
           {/* Language Selector */}
@@ -79,18 +79,18 @@ const Header = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          
+
           <a href={getNavLink('funkcjonalnosci')} className="justify-center items-start flex flex-col w-[122px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                O systemie 
+                O systemie
               </div>
             </div>
           </a>
           <a href={getNavLink('cennik')} className="justify-center items-start flex flex-col w-[89px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                Cennik 
+                Cennik
               </div>
             </div>
           </a>
@@ -165,18 +165,18 @@ const Header = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            
+
             <div className="flex flex-col border-b border-gray-600">
               <a href={getNavLink('funkcjonalnosci')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                  O systemie 
+                  O systemie
                 </div>
               </a>
             </div>
             <div className="flex flex-col border-b border-gray-600">
               <a href={getNavLink('cennik')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                  Cennik 
+                  Cennik
                 </div>
               </a>
             </div>

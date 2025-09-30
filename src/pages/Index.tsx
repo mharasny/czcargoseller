@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <div className="bg-[rgba(244,244,244,1)] flex flex-col overflow-hidden items-center py-[26px]">
       <Header />
-      
+
       <main className="w-full flex flex-col items-center">
         <HeroSection />
         <StatsSection />
