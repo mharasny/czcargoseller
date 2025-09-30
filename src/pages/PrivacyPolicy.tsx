@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
+import ContactSection from '@/components/ContactSection';
 import { Link } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
@@ -106,6 +107,10 @@ const PrivacyPolicy = () => {
           </section>
         </div>
       </main>
+      
+      <div className="w-full flex justify-center px-4">
+        <ContactSection />
+      </div>
     </div>
   );
 };

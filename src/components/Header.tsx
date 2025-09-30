@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import {
   DropdownMenu,
@@ -24,10 +24,16 @@ const languages = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
   const activeLanguage = languages.find(lang => lang.active) || languages[3];
+  const isHomePage = location.pathname === '/';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const getNavLink = (section: string) => {
+    return isHomePage ? `#${section}` : `/#${section}`;
   };
 
   return (
@@ -74,21 +80,21 @@ const Header = () => {
             </DropdownMenuContent>
           </DropdownMenu>
           
-          <a href="#funkcjonalnosci" className="justify-center items-start flex flex-col w-[122px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
+          <a href={getNavLink('funkcjonalnosci')} className="justify-center items-start flex flex-col w-[122px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                 O systemie 
               </div>
             </div>
           </a>
-          <a href="#cennik" className="justify-center items-start flex flex-col w-[89px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
+          <a href={getNavLink('cennik')} className="justify-center items-start flex flex-col w-[89px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                 Cennik 
               </div>
             </div>
           </a>
-          <a href="#kontakt" className="justify-center items-start flex flex-col w-[95px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
+          <a href={getNavLink('kontakt')} className="justify-center items-start flex flex-col w-[95px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                 Kontakt
@@ -161,21 +167,21 @@ const Header = () => {
             </div>
             
             <div className="flex flex-col border-b border-gray-600">
-              <a href="#funkcjonalnosci" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
+              <a href={getNavLink('funkcjonalnosci')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                   O systemie 
                 </div>
               </a>
             </div>
             <div className="flex flex-col border-b border-gray-600">
-              <a href="#cennik" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
+              <a href={getNavLink('cennik')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                   Cennik 
                 </div>
               </a>
             </div>
             <div className="flex flex-col border-b border-gray-600">
-              <a href="#kontakt" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
+              <a href={getNavLink('kontakt')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                   Kontakt
                 </div>
