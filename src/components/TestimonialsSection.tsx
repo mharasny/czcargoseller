@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
 
 
 const TestimonialsSection = () => {
-  const [emblaRef] = useEmblaCarousel(
-    { loop: true, align: 'start' },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true, 
+    align: 'start',
+    dragFree: true
+  });
+
+  const autoplay = useCallback(() => {
+    if (!emblaApi) return;
+    emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    const intervalId = setInterval(autoplay, 3000);
+    return () => clearInterval(intervalId);
+  }, [emblaApi, autoplay]);
 
   const logos = [
     {
