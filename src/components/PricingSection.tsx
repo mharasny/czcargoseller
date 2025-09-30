@@ -87,7 +87,7 @@ const PricingSection = () => {
     "WhatsApp",
     "Autom. odświeżanie ofert ładunków na giełdach",
     "Integracja ze skrzynką email, branding mailingu list ładunków (tytuł maila, logo w mailu)",
-    "Automatyczne szukanie wolnych pojazdów w TIMOOCOM w promieniu 100km od miejsca załadunku",
+    "Automatyczne szukanie wolnych pojazdów w TIMOCOM w promieniu 100km od miejsca załadunku",
     "Statystyki dla spedytora i managera"
   ];
 
