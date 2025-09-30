@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,6 +23,7 @@ const languages = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const activeLanguage = languages.find(lang => lang.active) || languages[3];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,7 +55,7 @@ const Header = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <div className="justify-center items-center flex flex-col w-[60px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 cursor-pointer hover:bg-gray-600 transition-colors">
-                <Globe className="w-5 h-5 text-white" />
+                <span className="text-2xl">{activeLanguage.flag}</span>
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-48 bg-popover z-50">
@@ -136,7 +137,7 @@ const Header = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors cursor-pointer">
-                    <Globe className="w-5 h-5 text-white mr-2" />
+                    <span className="text-2xl mr-2">{activeLanguage.flag}</span>
                     <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                       Język / Language
                     </div>
