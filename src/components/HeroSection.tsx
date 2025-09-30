@@ -2,7 +2,7 @@ import React from 'react';
 import heroBackground from '@/assets/hero-background.png';
 const HeroSection = () => {
   return <section className="w-full max-w-[1421px] mt-[131px] max-lg:mt-[180px] max-md:max-w-full max-md:mt-[200px]">
-      <div className="gap-5 flex max-md:flex-col max-md:items-stretch bg-auto bg-right bg-no-repeat min-h-[80vh] max-md:min-h-[50vh]" style={{
+      <div className="gap-5 flex max-md:flex-col max-md:items-stretch bg-auto bg-right bg-no-repeat min-h-[80vh] max-md:min-h-[50vh] max-md:bg-[length:16.67%] max-md:bg-top" style={{
       backgroundImage: `url(${heroBackground})`
     }}>
         <div className="w-9/12 max-md:w-full max-md:ml-0 max-md:order-2">
