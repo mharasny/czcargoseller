@@ -44,7 +44,7 @@ const Header = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/f4cf39285a5f4437f931fff00bfa00b707db0178?placeholderIfAbsent=true"
           alt="Logo"
-          className="aspect-[1.2] object-contain w-[120px] lg:w-[145px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-lg:mx-auto ml-4"
+          className="aspect-[1.2] object-contain w-[120px] lg:w-[145px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-lg:mx-auto"
         />
         <div className="self-stretch flex w-[100px] lg:w-[145px] shrink-0 h-[60px] lg:h-[73px] bg-[#4D4D4D] my-auto max-lg:flex-1" />
         
