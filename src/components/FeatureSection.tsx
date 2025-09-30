@@ -58,14 +58,14 @@ const FeaturesContainer = () => {
     features: ["od teraz nie szukasz wolnych pojazdów manualnie, robi to za Ciebie algorytm", "znalezione wyniki wyświetlane są w kolumnie „Propozycje\" wraz z propozycjami cenowymi z innych systemów"],
     imageSrc: searchVehicleImage
   }, {
-    title: "Statystyki",
-    description: "Rozproszenie wolumenu ładunków spot na sprzedaż na mailach wielu pracowników uniemożliwia przeprowadzanie analiz. Agregowanie wszystkich ładunków spot na sprzedaż w systemie CARGOseller pozwala na dostarczenie kompletnych statystyk.",
-    features: ["statystyki w ujęciu czasowym", "liczbę ładunków wpisanych, sprzedanych"],
-    imageSrc: statisticsImage
-  }, {
     title: "AI - szybciej, więcej, skuteczniej",
     description: "Wklej TEKST zapytania, a system wykorzystując AI utworzy gotowe oferty. Dodaj OBRAZ na którym są oferty, a system także utworzy gotowe oferty w czasie szybszym niż człowiek.",
     features: ["Praca z AI to sposób na poprawę efektywności i wyników finansowych bo zyskujesz czas", "Komfort pracy - nie przepisujesz ofert ręcznie"],
+    imageSrc: statisticsImage
+  }, {
+    title: "Statystyki",
+    description: "Rozproszenie wolumenu ładunków spot na sprzedaż na mailach wielu pracowników uniemożliwia przeprowadzanie analiz. Agregowanie wszystkich ładunków spot na sprzedaż w systemie CARGOseller pozwala na dostarczenie kompletnych statystyk.",
+    features: ["statystyki w ujęciu czasowym", "liczbę ładunków wpisanych, sprzedanych"],
     imageSrc: aiFeatureImage
   }];
   return <section className="w-full max-w-[1520px] mt-[111px] max-md:max-w-full max-md:mt-16">
