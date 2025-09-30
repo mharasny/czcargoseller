@@ -93,13 +93,13 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="justify-center items-start flex h-[73px] flex-col w-[124px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
+          <a href="https://app.cargoseller.pl/register" className="justify-center items-start flex h-[73px] flex-col w-[124px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                 Załóż konto
               </div>
             </div>
-          </div>
+          </a>
           <div className="items-start flex flex-col h-[73px] text-[#66BC98] font-bold justify-center w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 rounded-[0_8px_8px_0]">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="font-roboto-condensed text-lg font-bold leading-6" style={{color: '#66BC98'}}>
@@ -180,11 +180,11 @@ const Header = () => {
               </div>
             </div>
             <div className="flex flex-col border-b border-gray-600">
-              <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
+              <a href="https://app.cargoseller.pl/register" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                   Załóż konto
                 </div>
-              </div>
+              </a>
             </div>
             <div className="flex flex-col">
               <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
