@@ -100,13 +100,13 @@ const Header = () => {
               </div>
             </div>
           </a>
-          <div className="items-start flex flex-col h-[73px] text-[#66BC98] font-bold justify-center w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 rounded-[0_8px_8px_0]">
+          <a href="https://app.cargoseller.pl/login" className="items-start flex flex-col h-[73px] text-[#66BC98] font-bold justify-center w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 rounded-[0_8px_8px_0] hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="font-roboto-condensed text-lg font-bold leading-6" style={{color: '#66BC98'}}>
                 Zaloguj się
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Mobile/Tablet Hamburger Button */}
@@ -187,11 +187,11 @@ const Header = () => {
               </a>
             </div>
             <div className="flex flex-col">
-              <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
+              <a href="https://app.cargoseller.pl/login" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="font-roboto-condensed text-lg font-bold leading-6" style={{color: '#66BC98'}}>
                   Zaloguj się
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
