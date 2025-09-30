@@ -4,7 +4,7 @@ import accountClientIcon from '@/assets/account-client.svg';
 
 const ContactSection = () => {
   return (
-    <footer className="flex w-full max-w-[1520px] flex-col items-center bg-[#4D4D4D] mt-[316px] pt-20 pb-[33px] px-20 rounded-2xl max-md:max-w-full max-md:mt-10 max-md:px-5">
+    <footer id="kontakt" className="flex w-full max-w-[1520px] flex-col items-center bg-[#4D4D4D] mt-[316px] pt-20 pb-[33px] px-20 rounded-2xl max-md:max-w-full max-md:mt-10 max-md:px-5 scroll-mt-24">
       <div className="flex w-[1200px] max-w-full flex-col items-stretch">
         <div className="flex gap-[40px_77px] flex-wrap max-md:max-w-full">
           <ContactForm />
