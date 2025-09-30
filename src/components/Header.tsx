@@ -24,9 +24,9 @@ const Header = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/f4cf39285a5f4437f931fff00bfa00b707db0178?placeholderIfAbsent=true"
           alt="Logo"
-          className="aspect-[1.2] object-contain w-[80px] lg:w-[120px] h-[45px] sm:h-[50px] lg:h-[60px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-xl:hidden"
+          className="aspect-[1.2] object-contain w-[80px] lg:w-[120px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-md:hidden"
         />
-        <div className="self-stretch flex w-[100px] lg:w-[145px] shrink-0 h-[45px] sm:h-[50px] lg:h-[60px] bg-[#4D4D4D] my-auto max-xl:hidden" />
+        <div className="self-stretch flex w-[100px] lg:w-[145px] shrink-0 h-[45px] sm:h-[50px] lg:h-[60px] bg-[#4D4D4D] my-auto max-md:hidden" />
         
         {/* Desktop Menu Items */}
         <div className="hidden lg:flex flex-nowrap">
@@ -68,7 +68,7 @@ const Header = () => {
         </div>
 
         {/* Mobile/Tablet Hamburger Button */}
-        <div className="lg:hidden flex items-center justify-center w-[45px] sm:w-[50px] lg:w-[60px] h-[45px] sm:h-[50px] lg:h-[60px] bg-[#4D4D4D] rounded-[0_8px_8px_0]">
+        <div className="lg:hidden flex items-center justify-center w-[45px] sm:w-[50px] md:w-[60px] h-[45px] sm:h-[50px] md:h-[60px] bg-[#4D4D4D] rounded-[0_8px_8px_0]">
           <button
             onClick={toggleMenu}
             className="flex items-center justify-center w-full h-full focus:outline-none"
