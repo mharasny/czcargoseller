@@ -39,7 +39,7 @@ const ContactSection = () => {
                   className="aspect-[0.93] object-contain w-[37px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]"
                 />
                 <div className="text-white self-stretch my-auto">
-                  +48 792 003 967
+                  +48 736 359 272
                 </div>
               </div>
               <div className="flex w-full items-center gap-[30px] whitespace-nowrap mt-2 px-2">
