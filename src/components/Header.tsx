@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import {
   DropdownMenu,
@@ -32,7 +33,7 @@ const Header = () => {
   return (
     <header className="bg-transparent flex overflow-hidden items-center justify-center py-4 lg:py-[26px] fixed top-0 left-0 right-0 z-50">
       <nav className="flex items-center overflow-hidden text-sm lg:text-lg text-white font-normal leading-none flex-nowrap w-full max-w-[1520px] transform scale-75 sm:scale-85 md:scale-95 lg:scale-100 origin-center">
-        <div className="items-center flex h-[60px] lg:h-[73px] gap-2.5 text-lg sm:text-xl lg:text-2xl text-white font-bold uppercase flex-1 bg-[#4D4D4D] px-4 sm:px-6 lg:px-10 py-2.5 rounded-[16px_0_0_16px] min-w-0">
+        <Link to="/" className="items-center flex h-[60px] lg:h-[73px] gap-2.5 text-lg sm:text-xl lg:text-2xl text-white font-bold uppercase flex-1 bg-[#4D4D4D] px-4 sm:px-6 lg:px-10 py-2.5 rounded-[16px_0_0_16px] min-w-0 hover:bg-gray-600 transition-colors">
           <div className="self-stretch my-auto whitespace-nowrap overflow-hidden">
             <span className="text-white font-barlow-condensed text-base sm:text-lg lg:text-2xl font-bold uppercase leading-normal">
               cargo
@@ -41,7 +42,7 @@ const Header = () => {
               seller
             </span>
           </div>
-        </div>
+        </Link>
         <img
           src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/f4cf39285a5f4437f931fff00bfa00b707db0178?placeholderIfAbsent=true"
           alt="Logo"
