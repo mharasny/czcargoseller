@@ -45,7 +45,7 @@ const FunctionalitiesSection = () => {
   ];
 
   return (
-    <section className="w-full max-w-[1520px] mt-[131px] max-md:max-w-full max-md:mt-10">
+    <section id="funkcjonalnosci" className="w-full max-w-[1520px] mt-[131px] max-md:max-w-full max-md:mt-10 scroll-mt-24">
       <h2 className="text-czarny text-center text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] max-md:max-w-full">
         Funkcjonalności
       </h2>
