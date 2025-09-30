@@ -11,7 +11,7 @@ const languages = [
   { code: 'gb', name: 'English', url: 'https://cargoseller.co.uk', flag: '🇬🇧' },
   { code: 'at', name: 'Österreich', url: 'https://cargoseller.at', flag: '🇦🇹' },
   { code: 'nl', name: 'Nederland', url: 'https://cargoseller.nl', flag: '🇳🇱' },
-  { code: 'pl', name: 'Polska', url: 'https://cargoseller.eu', flag: '🇵🇱', active: true },
+  { code: 'pl', name: 'Polska', url: 'https://cargoseller.pl', flag: '🇵🇱', active: true },
   { code: 'sk', name: 'Slovensko', url: 'https://cargoseller.sk', flag: '🇸🇰' },
   { code: 'es', name: 'Español', url: 'https://cargoseller.es', flag: '🇪🇸' },
   { code: 'lt', name: 'Lietuvių', url: 'https://cargoseller.lt', flag: '🇱🇹' },
