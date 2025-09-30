@@ -69,11 +69,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
             </div>
           ))}
         </div>
-        <button className="bg-[rgba(235,235,235,1)] flex max-w-full w-[325px] flex-col text-lg text-[#4D4D4D] font-normal text-center leading-none justify-center px-8 py-4 rounded-3xl max-md:px-5 hover:bg-[#66BC98] hover:text-white transition-colors">
+        <a href="https://app.cargoseller.pl/register" className="bg-[rgba(235,235,235,1)] flex max-w-full w-[325px] flex-col text-lg text-[#4D4D4D] font-normal text-center leading-none justify-center px-8 py-4 rounded-3xl max-md:px-5 hover:bg-[#66BC98] hover:text-white transition-colors">
           <div>
             Wybierz plan
           </div>
-        </button>
+        </a>
       </div>
     </div>
   );
