@@ -79,13 +79,13 @@ const Header = () => {
               </div>
             </div>
           </a>
-          <div className="justify-center items-start flex flex-col w-[89px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
+          <a href="#cennik" className="justify-center items-start flex flex-col w-[89px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                 Cennik 
               </div>
             </div>
-          </div>
+          </a>
           <div className="justify-center items-start flex flex-col w-[95px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
@@ -166,11 +166,11 @@ const Header = () => {
               </a>
             </div>
             <div className="flex flex-col border-b border-gray-600">
-              <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
+              <a href="#cennik" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
                   Cennik 
                 </div>
-              </div>
+              </a>
             </div>
             <div className="flex flex-col border-b border-gray-600">
               <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">

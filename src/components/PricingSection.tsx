@@ -117,7 +117,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="w-[1200px] max-w-full mt-60 max-md:mt-10">
+    <section id="cennik" className="w-[1200px] max-w-full mt-60 max-md:mt-10 scroll-mt-24">
       <h2 className="text-czarny text-center text-[42px] font-barlow-condensed font-semibold tracking-[1.26px] max-md:max-w-full">
         Wybierz plan i stanowiska dla siebie
       </h2>
