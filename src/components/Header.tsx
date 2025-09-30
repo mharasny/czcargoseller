@@ -46,7 +46,7 @@ const Header = () => {
           alt="Logo"
           className="aspect-[1.2] object-contain w-[120px] lg:w-[145px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-lg:mx-auto"
         />
-        <div className="self-stretch flex w-[70px] lg:w-[115px] shrink-0 h-[60px] lg:h-[73px] bg-[#4D4D4D] my-auto max-lg:flex-1" />
+        <div className="self-stretch flex w-[50px] lg:w-[95px] shrink-0 h-[60px] lg:h-[73px] bg-[#4D4D4D] my-auto max-lg:flex-1" />
         
         {/* Desktop Menu Items */}
         <div className="hidden lg:flex flex-nowrap">
