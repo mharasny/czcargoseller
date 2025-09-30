@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
-import { toast } from '@/hooks/use-toast';
 
 interface FormData {
   name: string;
@@ -18,7 +16,6 @@ const ContactForm = () => {
     email: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,40 +25,20 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData
-      });
-
-      if (error) throw error;
-
-      toast({
-        title: "Wiadomość wysłana!",
-        description: "Dziękujemy za kontakt. Odpowiemy wkrótce.",
-      });
-
-      // Reset form
-      setFormData({
-        name: '',
-        company: '',
-        phone: '',
-        email: '',
-        message: ''
-      });
-    } catch (error: any) {
-      console.error('Error sending message:', error);
-      toast({
-        title: "Błąd",
-        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    console.log('Form submitted:', formData);
+    // Here you would typically send the data to your backend
+    alert('Formularz został wysłany!');
+    
+    // Reset form
+    setFormData({
+      name: '',
+      company: '',
+      phone: '',
+      email: '',
+      message: ''
+    });
   };
 
   return (
@@ -132,11 +109,10 @@ const ContactForm = () => {
       
       <button
         type="submit"
-        disabled={isSubmitting}
-        className="justify-center items-stretch flex min-h-[51px] w-[210px] max-w-full flex-col text-white whitespace-nowrap text-center bg-[#66BC98] mt-6 px-8 py-3.5 rounded-3xl max-md:px-5 hover:bg-[#5aa085] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="justify-center items-stretch flex min-h-[51px] w-[210px] max-w-full flex-col text-white whitespace-nowrap text-center bg-[#66BC98] mt-6 px-8 py-3.5 rounded-3xl max-md:px-5 hover:bg-[#5aa085] transition-colors"
       >
         <div className="text-white">
-          {isSubmitting ? 'Wysyłanie...' : 'Wyślij'}
+          Wyślij
         </div>
       </button>
     </form>
