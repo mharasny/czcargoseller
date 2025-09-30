@@ -24,9 +24,9 @@ const Header = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/f4cf39285a5f4437f931fff00bfa00b707db0178?placeholderIfAbsent=true"
           alt="Logo"
-          className="aspect-[1.2] object-contain w-[80px] lg:w-[120px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] max-md:hidden"
+          className="aspect-[1.2] object-contain w-[80px] lg:w-[120px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px] lg:hidden"
         />
-        <div className="self-stretch flex w-[100px] lg:w-[145px] shrink-0 h-[45px] sm:h-[50px] lg:h-[60px] bg-[#4D4D4D] my-auto max-md:hidden" />
+        <div className="self-stretch flex w-[100px] lg:w-[145px] shrink-0 h-[45px] sm:h-[50px] lg:h-[60px] bg-[#4D4D4D] my-auto lg:hidden" />
         
         {/* Desktop Menu Items */}
         <div className="hidden lg:flex flex-nowrap">
