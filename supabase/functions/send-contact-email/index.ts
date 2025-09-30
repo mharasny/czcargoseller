@@ -1,4 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { Resend } from "npm:resend@4.0.0";
+
+const resend = new Resend(Deno.env.get("RESEND_API_KEY") as string);
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -43,29 +46,15 @@ serve(async (req: Request) => {
       </div>
     `;
 
-    const resendResponse = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${Deno.env.get('RESEND_API_KEY')}`
-      },
-      body: JSON.stringify({
-        from: 'CargoSeller <onboarding@resend.dev>',
-        to: ['marek@cargoseller.pl'],
-        reply_to: email,
-        subject: 'Nowa wiadomość z formularza kontaktowego',
-        html,
-      })
+    const emailResponse = await resend.emails.send({
+      from: "CargoSeller <onboarding@resend.dev>",
+      to: ["marek@cargoseller.pl"],
+      reply_to: [email],
+      subject: "Nowa wiadomość z formularza kontaktowego",
+      html,
     });
 
-    const emailData = await resendResponse.json();
-
-    if (!resendResponse.ok) {
-      console.error("Resend API error:", emailData);
-      throw new Error(emailData.message || "Failed to send email");
-    }
-
-    console.log("Email sent successfully:", emailData);
+    console.log("Email sent successfully:", emailResponse);
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,
