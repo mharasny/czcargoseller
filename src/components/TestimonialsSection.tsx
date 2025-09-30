@@ -1,6 +1,14 @@
 import React from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+
 
 const TestimonialsSection = () => {
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true, align: 'start' },
+    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+  );
+
   const logos = [
     {
       src: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/e54809a9ca5b4d37fe2d3a3634f3b3d5bff3d354?placeholderIfAbsent=true",
@@ -27,15 +35,18 @@ const TestimonialsSection = () => {
         <span style={{color: 'rgba(102,188,152,1)'}}>800 spedytorów</span>,
         zaufali nam m.in.:
       </h2>
-      <div className="bg-blend-luminosity flex min-h-[50px] w-full items-center gap-[40px_100px] justify-between mt-20 max-md:max-w-full max-md:mt-10">
-        {logos.map((logo, index) => (
-          <img
-            key={index}
-            src={logo.src}
-            alt={`Client logo ${index + 1}`}
-            className={`${logo.className} self-stretch shrink-0 my-auto`}
-          />
-        ))}
+      <div className="overflow-hidden mt-20 max-md:mt-10" ref={emblaRef}>
+        <div className="flex gap-[100px] max-md:gap-[50px]">
+          {logos.map((logo, index) => (
+            <div key={index} className="flex-[0_0_auto] flex items-center justify-center min-w-[150px]">
+              <img
+                src={logo.src}
+                alt={`Client logo ${index + 1}`}
+                className={`${logo.className} object-contain`}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
