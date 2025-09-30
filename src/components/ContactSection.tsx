@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ContactForm from './ui/ContactForm';
 import accountClientIcon from '@/assets/account-client.svg';
 
@@ -108,9 +109,9 @@ const ContactSection = () => {
             Copyright © 2025 cargoseller.pl
           </div>
           <div className="flex items-stretch gap-[40px_80px] max-md:max-w-full">
-            <div className="text-white opacity-50 basis-auto">
+            <Link to="/polityka-prywatnosci" className="text-white opacity-50 basis-auto hover:opacity-100 transition-opacity">
               Polityka prywatności i cookies
-            </div>
+            </Link>
             <div className="text-white opacity-50 basis-auto">
               CS SOFT, Szydłowo 189, 64-930 Szydłowo
             </div>
