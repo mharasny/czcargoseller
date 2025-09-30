@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
       </h2>
       <div className="overflow-hidden mt-20 max-md:mt-10" ref={emblaRef}>
         <div className="flex gap-[150px] max-md:gap-[80px]">
-          {logos.map((logo, index) => (
+          {[...logos, ...logos].map((logo, index) => (
             <div key={index} className="flex-[0_0_auto] flex items-center justify-center min-w-[150px]">
               <img
                 src={logo.src}
