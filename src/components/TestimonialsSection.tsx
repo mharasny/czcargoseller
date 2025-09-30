@@ -1,5 +1,12 @@
 import React, { useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
+import alfaLogo from '@/assets/alfa.png';
+import caveralLogo from '@/assets/caveral.png';
+import gpwlLogo from '@/assets/gpwl.png';
+import guliverLogo from '@/assets/guliver.png';
+import optimaLogo from '@/assets/optima.png';
+import palomoLogo from '@/assets/palomo.png';
+import ritexLogo from '@/assets/ritex.png';
 
 
 const TestimonialsSection = () => {
@@ -21,22 +28,13 @@ const TestimonialsSection = () => {
   }, [emblaApi, autoplay]);
 
   const logos = [
-    {
-      src: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/e54809a9ca5b4d37fe2d3a3634f3b3d5bff3d354?placeholderIfAbsent=true",
-      className: "aspect-[4.03] object-contain w-[121px]"
-    },
-    {
-      src: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/14ca470046937465c78f0d881456ede36c07a8d8?placeholderIfAbsent=true",
-      className: "aspect-[2.73] object-contain w-[82px]"
-    },
-    {
-      src: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/c88810ea61d6626a084a2c675ef1df3ea44e4f5c?placeholderIfAbsent=true",
-      className: "aspect-[5] object-contain w-[150px]"
-    },
-    {
-      src: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/253f82e3cdd11c3e44a7d49dea68ce1acfa1ec94?placeholderIfAbsent=true",
-      className: "aspect-[3.7] object-contain w-[148px]"
-    }
+    { src: alfaLogo, alt: "Alfa Forwarding" },
+    { src: caveralLogo, alt: "Caveral" },
+    { src: gpwlLogo, alt: "GPW Logistics" },
+    { src: guliverLogo, alt: "Guliver Transport & Spedycja" },
+    { src: optimaLogo, alt: "Optima Logistics Group" },
+    { src: palomoLogo, alt: "Palomo Solutions" },
+    { src: ritexLogo, alt: "Ritex Cargo" }
   ];
 
   return (
@@ -52,8 +50,8 @@ const TestimonialsSection = () => {
             <div key={index} className="flex-[0_0_auto] flex items-center justify-center min-w-[150px]">
               <img
                 src={logo.src}
-                alt={`Client logo ${index + 1}`}
-                className={`${logo.className} object-contain`}
+                alt={logo.alt}
+                className="object-contain h-[60px] w-auto max-w-[200px]"
               />
             </div>
           ))}
